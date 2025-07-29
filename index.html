@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swathi P - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: #007bff;
+      text-align: right;
+      padding: 0.5rem 2rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+
+    .box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #007bff;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .carousel-button {
+      background: #007bff;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .skill {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: green;
+      font-size: 0.9rem;
+      background: white;
+    }
+
+    .skill::before {
+      content: attr(data-skill) "\A" attr(data-percent) "%";
+      white-space: pre;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
+
+    .skill::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(#f25c43 calc(var(--percent) * 1%), #fff 0%);
+      z-index: 1;
+      padding: 3px;
+      box-sizing: border-box;
+      mask: radial-gradient(closest-side, transparent 75%, black 76%);
+      -webkit-mask: radial-gradient(closest-side, transparent 75%, black 76%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="WhatsApp_Image_2025-03-28.jpg" alt="Swathi P">
+    <h1>Swathi P</h1>
+    <p>B.Tech Final Year Student | Intern</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="box">
+      <p>
+          Aspiring Computer Science and Engineering professional with a solid foundation in programming, web development, and machine learning. Experienced in real-world problem-solving through academic and internship projects. Seeking opportunities to apply technical and analytical skills in a dynamic work environment.
+        I’m passionate about leveraging technology to solve real-world problems and am eager to contribute to innovative, impactful projects in a collaborative environment.
+      </p>    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill" data-skill="Python" data-percent="90" style="--percent: 90"></div>
+      <div class="skill" data-skill="JavaScript" data-percent="80" style="--percent: 80"></div>
+      <div class="skill" data-skill="HTML" data-percent="95" style="--percent: 95"></div>
+      <div class="skill" data-skill="CSS" data-percent="90" style="--percent: 90"></div>
+      <div class="skill" data-skill="Node.js" data-percent="75" style="--percent: 75"></div>
+      <div class="skill" data-skill="Express.js" data-percent="70" style="--percent: 70"></div>
+      <div class="skill" data-skill="REST APIs" data-percent="80" style="--percent: 80"></div>
+      <div class="skill" data-skill="MySQL" data-percent="85" style="--percent: 85"></div>
+      <div class="skill" data-skill="SQL" data-percent="80" style="--percent: 80"></div>
+      <div class="skill" data-skill="C" data-percent="85" style="--percent: 85"></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="box">
+      <strong>Research Intern - Murti Lab, GITAM University (May 2024 - June 2024)</strong>
+      <p><em>Plant Guard – Tomato Leaf Disease Detection</em></p>
+      <ul>
+        <li>Designed and trained a deep learning model using Convolutional Neural Networks (CNN) to detect and classify tomato leaf diseases from image data.</li>
+        <li>Explored real-world applications of AI in agriculture for early disease detection and crop protection.</li>
+        <li>Enhanced skills in deep learning, model training, and performance evaluation using Python and Keras.</li>
+      </ul>
+    </div>
+    <div style="text-align: center;">
+      <button class="carousel-button">Previous</button>
+      <button class="carousel-button">Next</button>
+    </div>
+  </section>
+
+   <section id="projects">
+  <h2>Projects</h2>
+  <div class="box" id="project-display">
+    <!-- Project content will be injected here -->
+  </div>
+  <div style="text-align: center;">
+    <button class="carousel-button" onclick="showPreviousProject()">Previous</button>
+    <button class="carousel-button" onclick="showNextProject()">Next</button>
+  </div>
+</section>
+
+  <footer id="contact">
+    <p>Contact: swathip200467@gmail.com | Phone: +91-70196-01664 | <a href="https://www.linkedin.com/in/swathi-p-b967b3321/" style="color: white;">LinkedIn</a></p>
+    <p>&copy; 2024 Swathi P. All rights reserved.</p>
+  </footer>
+
+  <script>
+     const projects = [
+    
+     {
+    title: "To-Do List WebApp",
+    description: `Built a responsive web-based scheduling tool enabling users to add, edit, categorize, and visualize tasks on a live calendar. Automated daily scheduling to eliminate manual updates.<br><strong>Tools Used:</strong> JavaScript, Node.js, Express.js, MySQL, SQL, REST APIs, HTML/CSS, npm.<br><strong>Live Demo of frontend:</strong> <a href="https://todolist-amber-alpha.vercel.app/" target="_blank">todolist-amber-alpha.vercel.app</a>`
+  },    {
+      title: "PlantGuard – AI Chatbot for Proactive Crop Health Prediction (Ongoing)",
+      description: `Building a web-based AI tool that detects leaf diseases in tomato plants using deep learning and provides real-time advice via an integrated chatbot that supports multiple Indian languages. Expanding to support potato and onion crops.<br><strong>Tools Used:</strong> Python, TensorFlow, OpenCV, Flask, HTML/CSS, JavaScript, REST APIs, Jupyter Notebook.`
+    },
+   
+  ];
+    let currentProject = 0;
+
+    function showProject(index) {
+      const container = document.getElementById("project-display");
+      container.innerHTML = `<strong>${projects[index].title}</strong><p>${projects[index].description}</p>`;
+    }
+
+    function showPreviousProject() {
+      currentProject = (currentProject - 1 + projects.length) % projects.length;
+      showProject(currentProject);
+    }
+
+    function showNextProject() {
+      currentProject = (currentProject + 1) % projects.length;
+      showProject(currentProject);
+    }
+
+    // Show first project on page load
+    showProject(currentProject);
+  </script>
+</body>
+</html>
