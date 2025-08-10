@@ -162,7 +162,9 @@
       <div class="skill" data-skill="REST APIs" data-percent="80" style="--percent: 80"></div>
       <div class="skill" data-skill="MySQL" data-percent="85" style="--percent: 85"></div>
       <div class="skill" data-skill="SQL" data-percent="80" style="--percent: 80"></div>
+      <div class="skill" data-skill="Django" data-percent="80" style="--percent: 80"></div>
       <div class="skill" data-skill="C" data-percent="85" style="--percent: 85"></div>
+
     </div>
   </section>
 
@@ -200,17 +202,22 @@
   </footer>
 
   <script>
-     const projects = [
     
-     {
+     const projects = [
+  {
+    title: "Course Registration Web Application",
+    description: `Developed a full-stack web application using Django framework to manage course information and student registrations. Implemented user authentication and role-based access control. Enabled CRUD operations for courses and users, with data stored in a SQLite database during development. Focused on building a clean UI with HTML/CSS and ensuring secure data handling.<br><strong>Tools Used:</strong> Python, Django, SQLite, HTML, CSS, Git.`
+  },
+  {
+  title: "PlantGuard – AI Chatbot for Proactive Crop Health Prediction (Ongoing)",
+  description: `Developing a web-based AI tool that uses deep learning to accurately detect and classify leaf diseases in tomato plants from images. The system integrates an intelligent chatbot that provides real-time, context-aware advice to farmers, supporting multiple Indian languages to improve accessibility. Extending capabilities to cover additional crops like potato and onion.<br><strong>Tools Used:</strong> Python, TensorFlow, OpenCV, Flask, HTML/CSS, JavaScript, REST APIs, Jupyter Notebook.`
+},
+  {
     title: "To-Do List WebApp",
     description: `Built a responsive web-based scheduling tool enabling users to add, edit, categorize, and visualize tasks on a live calendar. Automated daily scheduling to eliminate manual updates.<br><strong>Tools Used:</strong> JavaScript, Node.js, Express.js, MySQL, SQL, REST APIs, HTML/CSS, npm.<br><strong>Live Demo of frontend:</strong> <a href="https://todolist-amber-alpha.vercel.app/" target="_blank">todolist-amber-alpha.vercel.app</a>`
-  },    {
-      title: "PlantGuard – AI Chatbot for Proactive Crop Health Prediction (Ongoing)",
-      description: `Building a web-based AI tool that detects leaf diseases in tomato plants using deep learning and provides real-time advice via an integrated chatbot that supports multiple Indian languages. Expanding to support potato and onion crops.<br><strong>Tools Used:</strong> Python, TensorFlow, OpenCV, Flask, HTML/CSS, JavaScript, REST APIs, Jupyter Notebook.`
-    },
-   
-  ];
+  }
+];
+  
     let currentProject = 0;
 
     function showProject(index) {
